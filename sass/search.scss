@@ -1,0 +1,12 @@
+.search{
+    max-width: 263px;
+    font-size: 20px;
+    padding-left: 20px;
+    border: none;
+    height: 43px;
+    background-color: #D9D9D9;
+    color: #797979;
+    &:focus{
+        outline: none;
+    }
+}

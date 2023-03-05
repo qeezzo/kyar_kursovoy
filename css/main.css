@@ -1,0 +1,71 @@
+.menu {
+  font-size: 30px;
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+.menu li {
+  color: #fff;
+}
+
+.header {
+  height: 80px;
+  background-color: #323232;
+  position: fixed;
+  width: 100%;
+}
+.header .container {
+  padding: 0 7px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  color: #fff;
+  font-size: 45px;
+}
+
+.logo {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.search {
+  max-width: 263px;
+  font-size: 20px;
+  padding-left: 20px;
+  border: none;
+  height: 43px;
+  background-color: #D9D9D9;
+  color: #797979;
+}
+.search:focus {
+  outline: none;
+}
+
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body, html {
+  background-color: #FFF2C2;
+  height: 100%;
+  font-family: Jost;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
+}
+
+.main {
+  background-color: #fff;
+  height: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
