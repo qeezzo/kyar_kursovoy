@@ -3,7 +3,13 @@
     display: flex;
     list-style: none;
     gap: 32px;
-    li{
+    &__link{
         color: #fff;
+        transition: text-decoration 0.2s ;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
+    
 }

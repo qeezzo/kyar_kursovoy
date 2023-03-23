@@ -4,14 +4,17 @@
   list-style: none;
   gap: 32px;
 }
-.menu li {
+.menu__link {
   color: #fff;
+  transition: text-decoration 0.2s;
+}
+.menu__link:hover {
+  text-decoration: underline;
 }
 
 .header {
   height: 80px;
   background-color: #323232;
-  position: fixed;
   width: 100%;
 }
 .header .container {
@@ -43,6 +46,10 @@
 }
 .search:focus {
   outline: none;
+}
+
+.kinds__kind {
+  display: flex;
 }
 
 * {
