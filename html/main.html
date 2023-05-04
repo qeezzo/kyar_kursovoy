@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
@@ -16,21 +16,48 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header__logo logo">КОТОПЕДИЯ</div>
+			<a href="main.html" class="header__logo logo">КОТОПЕДИЯ</a>
 			<ul class="header__menu menu">
-				<li><a class="menu__link" href="main.html">главная</a></li>
+				<li><a class="menu__link choosen" href="main.html">главная</a></li>
 				<li><a class="menu__link" href="kinds.html">виды кошачьих</a></li>
 				<li><a class="menu__link" href="all_cats.html">все коты</a></li>
 				<li><a class="menu__link" href="pictures.html">картинки</a></li>
 			</ul>
-			<input placeholder="поиск..." type="text" class="header__search search">
+			<input id="searchInput" placeholder="поиск..." type="text" class="header__search search">
+			<button class="header__burger burger">
+				<span class="burger__line"></span>
+				<span class="burger__line"></span>
+				<span class="burger__line"></span>
+			</button>
 		</div>
 	</header>
-	<div class="container">
-		<main class="main">
 
-		</main>
-	</div>
+	<main class="main">
+		<div class="main__container container">
+			<div class="intro">
+				<h2 class="intro__header">Добро пожаловать на Котопедию!</h2>
+				<p class="intro__p">Этот сайт посвящен кошачьему миру. Здесь вы найдете всю интересную информацию о кошачьих, а также можете
+					посмотреть потрясающие фото котиков. </p>
+	
+				<img class="intro__img" src="../img/кошка_лежит.jpg" alt="Cat picture">
+				<p class="intro__p">На этом сайте вы можете узнать о различных видах кошачьих, познакомиться с другими котиками и поделиться
+					своими
+					эмоциями. </p>
+				<img class="intro__img" src="../img/кошка_улыбка.jpg" alt="Cat picture 2">
+				<p class="intro__p"><b>Присоединяйтесь к нам и наслаждайтесь котиками вместе с нами! </b></p>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<h5 class="footer__info">email для контакта: kotopedia@cats.com</h5>
+			<!-- <img class="footer__paw" src="../img/cat.svg" alt=""> -->
+		</div>
+	</footer>
+	<script src="../js/burger.js"></script>
+	<script src="../js/search.js"></script>
+	<script src="../js/db.js"></script>
 </body>
 
 </html>

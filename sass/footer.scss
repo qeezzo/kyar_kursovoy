@@ -1,0 +1,36 @@
+.footer {
+    box-sizing: border-box;
+    padding: 18px 63px 19px 33px;
+    background-color: #323232;
+    background-image: url("../img/cat.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &__info {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    &__paw {
+        width: 100px;
+    }
+
+    .container {
+    }
+}
+
+@media ( max-width: 620px) {
+    .footer {
+
+        &__info {
+            font-size: 24px;
+        }
+    }
+}
+
+@media ( max-width: 400px) {
+    .footer {
+        background-position: calc(100% + 20px) center;
+    }
+}

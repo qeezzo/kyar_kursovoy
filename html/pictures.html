@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
@@ -16,21 +16,57 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header__logo logo">КОТОПЕДИЯ</div>
+			<a href="main.html" class="header__logo logo">КОТОПЕДИЯ</a>
+			<!-- <div class="header__logo logo">КОТОПЕДИЯ</div> -->
 			<ul class="header__menu menu">
 				<li><a class="menu__link" href="main.html">главная</a></li>
 				<li><a class="menu__link" href="kinds.html">виды кошачьих</a></li>
 				<li><a class="menu__link" href="all_cats.html">все коты</a></li>
-				<li><a class="menu__link" href="pictures.html">картинки</a></li>
+				<li><a class="menu__link choosen" href="pictures.html">картинки</a></li>
 			</ul>
-			<input placeholder="поиск..." type="text" class="header__search search">
+			<input id="searchInput" placeholder="поиск..." type="text" class="header__search search">
+			<button class="header__burger burger">
+				<span class="burger__line"></span>
+				<span class="burger__line"></span>
+				<span class="burger__line"></span>
+			</button>
 		</div>
 	</header>
-	<div class="container">
-		<main class="main">
+	<main class="main pics__container">
+		<div class="main__container container">
 
-		</main>
-	</div>
+			<div class="pics">
+				<img class="big" src="../cats/Пантеры/img/Большая.jpg" alt="">
+				<img src="../cats/Катопумы/img/Катопумы.jpg" alt="">
+				<img src="../cats/Катопумы/img/Кошка_Темминка.jpg" alt="">
+				<img class="half" src="../cats/Пантеры/img/Леопард-Большой.webp" alt="">
+				<img src="../cats/Катопумы/img/Большая.jpg" alt="">
+				<img src="../cats/Пантеры/img/Ирбис.jpg" alt="">
+				<img class="big" src="../cats/Пантеры/img/Тигр-Большой.jpg" alt="">
+				<img src="../cats/Катопумы/img/Калимантанская_Кошка-Большой.jpg" alt="">
+				<img src="../cats/Катопумы/img/Кошка_Темминка-Большой.jpg" alt="">
+				<img class="big" src="../cats/Пантеры/img/Ягуар-Большой.webp" alt="">
+				<img src="../cats/Пантеры/img/Пантера.jpeg" alt="">
+				<img src="../cats/Пантеры/img/Лев.jpg" alt="">
+				<img class="half" src="../cats/Пантеры/img/Леопард.jpg" alt="">
+				<img src="../cats/Пантеры/img/Тигр.webp" alt="">
+				<img src="../cats/Пантеры/img/Лев-Большой.webp" alt="">
+				<img src="../cats/Пантеры/img/Ирбис-Большой.jpg" alt="">
+				<img src="../cats/Пантеры/img/Ягуар.jpg" alt="">
+
+			</div>
+
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<h5 class="footer__info">email для контакта: kotopedia@cats.com</h5>
+		</div>
+	</footer>
+	<script src="../js/burger.js"></script>
+	<script src="../js/search.js"></script>
+	<script src="../js/pics.js"></script>
+	<script src="../js/db.js"></script>
 </body>
 
 </html>

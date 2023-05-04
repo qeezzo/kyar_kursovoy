@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
@@ -16,21 +16,74 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header__logo logo">КОТОПЕДИЯ</div>
+			<a href="main.html" class="header__logo logo">КОТОПЕДИЯ</a>
+			<!-- <div class="header__logo logo">КОТОПЕДИЯ</div> -->
 			<ul class="header__menu menu">
 				<li><a class="menu__link" href="main.html">главная</a></li>
 				<li><a class="menu__link" href="kinds.html">виды кошачьих</a></li>
-				<li><a class="menu__link" href="all_cats.html">все коты</a></li>
+				<li><a class="menu__link choosen" href="all_cats.html">все коты</a></li>
 				<li><a class="menu__link" href="pictures.html">картинки</a></li>
 			</ul>
-			<input placeholder="поиск..." type="text" class="header__search search">
+			<input id="searchInput" placeholder="поиск..." type="text" class="header__search search">
+			<button class="header__burger burger">
+				<span class="burger__line"></span>
+				<span class="burger__line"></span>
+				<span class="burger__line"></span>
+			</button>
 		</div>
 	</header>
-	<div class="container">
-		<main class="main">
+	<main class="main">
+		<div class="main__container container">
 
-		</main>
-	</div>
+			<div class="cats">
+
+				<a href="../cats/Пантеры/Ирбис.html" class="cat">
+					<img class="cat__img" src="../cats/Пантеры/img/Ирбис.jpg" alt="tut kot">
+					<h3 class="cat__label">Ирбис</h3>
+				</a>
+
+				<a href="../cats/Пантеры/Лев.html" class="cat">
+					<img class="cat__img" src="../cats/Пантеры/img/Лев.jpg" alt="tut kot">
+					<h3 class="cat__label">Лев</h3>
+				</a>
+
+				<a href="../cats/Пантеры/Леопард.html" class="cat">
+					<img class="cat__img" src="../cats/Пантеры/img/Леопард.jpg" alt="tut kot" style="object-position: 15% 50%;">
+					<h3 class="cat__label">Леопард</h3>
+				</a>
+
+				<a href="../cats/Пантеры/Тигр.html" class="cat">
+					<img class="cat__img" src="../cats/Пантеры/img/Тигр.webp" alt="tut kot">
+					<h3 class="cat__label">Тигр</h3>
+				</a>
+
+				<a href="../cats/Пантеры/Ягуар.html" class="cat">
+					<img class="cat__img" src="../cats/Пантеры/img/Ягуар.jpg" alt="tut kot" style="object-position: 30% 50%;">
+					<h3 class="cat__label">Ягуар</h3>
+				</a>
+
+				<a href="../cats/Катопумы/Калимантанская_Кошка.html" class="cat">
+					<img class="cat__img" src="../cats/Катопумы/img/Калимантанская_Кошка.jpg" alt="tut kot" style="object-position: 90% 50%;">
+					<h3 class="cat__label">Калимантанская Кошка</h3>
+				</a>
+
+				<a href="../cats/Катопумы/Кошка_Темминка.html" class="cat">
+					<img class="cat__img" src="../cats/Катопумы/img/Кошка_Темминка.jpg" alt="tut kot">
+					<h3 class="cat__label">Кошка Темминка</h3>
+				</a>
+
+			</div>
+
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<h5 class="footer__info">email для контакта: kotopedia@cats.com</h5>
+		</div>
+	</footer>
+	<script src="../js/burger.js"></script>
+	<script src="../js/search.js"></script>
+	<script src="../js/db.js"></script>
 </body>
 
 </html>

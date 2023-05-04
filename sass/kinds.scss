@@ -1,5 +1,101 @@
 .kinds {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 35px;
     &__kind {
+        height: 400px;
         display: flex;
+        gap: 35px;
+        .kind__image {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .kind__text {
+            display: flex;
+            flex-direction: column;
+            .kind__header {
+                font-size: 48px;
+                text-align: center;
+                line-height: 70%;
+                text-decoration: solid underline 3px #FFCD1C;
+                text-underline-offset: 8px;
+                margin-bottom: 16px;
+            }
+
+            .kind__paragraph {
+                flex: 1 0 auto;
+                font-size: 24px;
+                line-height: 147%;
+                text-align: justify;
+                overflow: hidden;
+                //max-height: 350px;
+                //text-overflow: ellipsis;
+
+                -webkit-line-clamp: 9; /* Число отображаемых строк */
+                display: -webkit-box; /* Включаем флексбоксы */
+                -webkit-box-orient: vertical; /* Вертикальная ориентация */
+            }
+
+            .kind__link {
+                color: #8d8d8d;
+                font-size: 27px;
+                text-align: right;
+                transition: all 0.2s;
+                &:hover {
+                    color: rgb(10, 75, 172);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1044px){
+    .kinds {
+
+        &__kind {
+            height: 300px;
+
+            .kind__image {
+                width: 300px;
+                height: 300px;
+            }
+
+            .kind__text{
+
+                .kind__header {
+                    font-size: 30px;
+                }
+
+                .kind__paragraph {
+                    font-size: 19px;
+                    -webkit-line-clamp: 8; /* Число отображаемых строк */
+                    line-height: 150%;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .kinds {
+        padding: 20px;
+
+        &__kind {
+            flex-direction: column-reverse;
+            height: auto;
+
+            .kind__image {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__kind:nth-child(even){
+            flex-direction: column;
+        }
     }
 }

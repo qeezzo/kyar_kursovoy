@@ -1,15 +1,83 @@
 .menu{
+    flex: 1 1 auto;
     font-size: 30px;
+    max-width: 628px;
     display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
     list-style: none;
-    gap: 32px;
+    transition: all 0.1s ease-in;
+
     &__link{
         color: #fff;
-        transition: text-decoration 0.2s ;
+        text-decoration: solid 2px underline transparent;
+        text-underline-offset: 10px;
+        transition: all 0.1s ease-in-out;
 
         &:hover {
-            text-decoration: underline;
+            text-decoration-color: #FFCD1C;
         }
     }
+
+    .choosen {
+        text-decoration: solid 2px underline #FFCD1C;
+    }
+}
+
+@media (max-width: 1144px) {
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        z-index: -1;
+        right: 0;
+        top: 80px;
+        transform: translateX(100%);
+        transition: all 0.3s ease-in-out;
+
+        margin: 0;
+        position: absolute;
+        max-width: 100%;
+        width: 50%;
+
+        border-bottom-left-radius: 50%;
+        border-left: dashed 3px #323232;
+        border-bottom: dashed 3px #323232;
+        background-color: #fafafa;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+
+        overflow: hidden;
+        .menu__link {
+            display: block;
+            width: 100%;
+            text-decoration: none;
+            color: #3e3d3d;
+            padding: 20px 0;
+        }
+
+        a:active {
+            background-color: #dbdbdb;
+        }
+    }
+
+    .menu.open {
+        transform: translateX(0);
+    }
+}
+
+@media (min-width: 550px) {
+    .menu.open {
+        a:hover {
+            background-color: #dbdbdb;
+        }
+    }
+}
+            
+@media (max-width: 550px) {
     
+    .menu.open {
+        width: 100%;
+    }
 }

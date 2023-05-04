@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
@@ -16,35 +16,84 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header__logo logo">КОТОПЕДИЯ</div>
+			<a href="main.html" class="header__logo logo">КОТОПЕДИЯ</a>
+			<!-- <div class="header__logo logo">КОТОПЕДИЯ</div> -->
 
 			<ul class="header__menu menu">
 				<li><a class="menu__link" href="main.html">главная</a></li>
-				<li><a class="menu__link" href="kinds.html">виды кошачьих</a></li>
+				<li><a class="menu__link choosen" href="kinds.html">виды кошачьих</a></li>
 				<li><a class="menu__link" href="all_cats.html">все коты</a></li>
 				<li><a class="menu__link" href="pictures.html">картинки</a></li>
 			</ul>
 
-			<input placeholder="поиск..." type="text" class="header__search search">
+			<input id="searchInput" placeholder="поиск..." type="text" class="header__search search">
+			<button class="header__burger burger">
+				<span class="burger__line"></span>
+				<span class="burger__line"></span>
+				<span class="burger__line"></span>
+			</button>
 		</div>
 	</header>
-	<div class="container">
-		<main class="main">
-			
-			<section class="kinds">
-				<article class="kinds__kind">
-					<div class="kind__image">
-						<img src="" alt="cat.pic">
-					</div>
+	<main class="main">
+		<div class="main__container container">
+		
+			<div class="kinds">
+				<article class="kinds__kind kind">
+					<img class="kind__image" src="../cats/Пантеры/img/Пантера.jpeg" alt="cat.pic">
 					<div class="kind__text">
-						<h3 class="kind__header">Header</h3>
-						<p class="kind__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facere obcaecati quam ex in delectus, fuga possimus, eius incidunt, illo voluptas officia! Dolor quis, natus doloremque aperiam neque ex cumque?</p>
+						<h3 class="kind__header">Пантеры</h3>
+						<p class="kind__paragraph">Размеры представителей рода крупные и очень крупные. К роду относится крупнейший представитель всего семейства кошачьих — амурский подвид тигра. Туловище вытянутое, иногда сильно. Крестцовая область не высокая, а линия спины не поднимается сзади, как у малых кошек, а идёт прямо. Высота в плечах (в холке) больше, чем в области крестца, при этом линия спины немного поката сзади. Хвост обычно длинный, на него приходится не менее половины длины тела, у некоторых видов немного больше. Голова относительно крупная или крупная, несколько вытянутая, с удлинённой лицевой частью. Уши маленькие, короткие, с закруглённой вершиной, без кисточки на конце. У самцов льва, а также у других видов в зимнем мехе они слабо выдаются из меха. Глаза с круглым зрачком. Иногда волосы на щеках удлинены и образуют так называемые баки, у льва в передней части тела самцов имеется развитая грива, а хвост имеет на конце кисточку из удлинённых волос. Ноги невысокие и толстые, сильные, с широкой лапой, особенно передней. Когти на лапах большие, острые и изогнутые, полностью втяжные. На концах пальцев по бокам от когтя имеется кожная складка, которая полностью скрывает втянутый коготь. Окраска одноцветная или с чёрными поперечными полосами или по основному светлому фону находятся чёрные пятна — одиночные или розеткообразные. Зубная система полная. Зубы очень сильные, клыки относительно коротки, но мощные, с широкой основной частью. Половой диморфизм у большинства видов выражается в более крупных размерах самцов. У льва самец отличается развитием гривы на передней части туловища. </p>
+						<a href="../cats/Пантеры/Пантеры.html" class="kind__link">Читать далее...</a>
 					</div>
 				</article>
-			</section>
 
-		</main>
-	</div>
+				<article class="kinds__kind">
+					<div class="kind__text">
+						<h3 class="kind__header">Катопумы</h3>
+						<p class="kind__paragraph">Цвет шерсти у катопум красновато-коричневатого цвета, с более темными отметинами на
+							голове. В отличие от большинства других видов кошачьих на их шерсти почти нет каких-либо узоров. Длина тела
+							кошки Темминка достигает 105 см, а вес — 16 кг. Таким образом, она намного крупнее обычной домашней кошки.
+							Калимантанская кошка значительно мельче своей ближайшей родственницы и весит максимально лишь 5 кг.
+						
+							Катопумы обитают в тропических лесах Юго-Восточной Азии. Их ареал состоит преимущественно из ареала кошки Темминка,
+							простирающегося от южного Китая до Суматры. Калимантанская кошка является эндемиком острова Борнео.
+						
+							О поведении этих животных известно не очень много. Они являются ночными охотниками и, несмотря на умения лазать на
+							деревья, предпочитают охотиться на земле. К их основной добыче относятся небольшие млекопитающие и другие
+							позвоночные.
+						
+							Ранее считалось, что живущая в Африке золотая кошка является близкой родственницей катопум, и их вместе выделяли в
+							отдельный род золотых кошек. Однако это сходство, скорее всего, — результат конвергенции. Точное положение катопум в
+							системе кошачьих пока не выяснено. По результатам исследований ДНК, их иногда относят к роду Pardofelis. </p>
+						<a href="../cats/Катопумы/Катопумы.html" class="kind__link">Читать далее...</a>
+					</div>
+					<img class="kind__image" src="../cats/Катопумы/img/Катопумы.jpg" alt="cat.pic">
+				</article>
+
+				<!--
+				<article class="kinds__kind">
+					<img class="kind__image" src="../img/cat.jpg" alt="cat.pic">
+					<div class="kind__text">
+						<h3 class="kind__header">Название вида</h3>
+						<p class="kind__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facere obcaecati quam ex in delectus, fuga possimus, eius incidunt, illo voluptas officia! Dolor quis, natus doloremque aperiam neque ex cumque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facere obcaecati quam ex in delectus, fuga possimus, eius incidunt, illo voluptas officia! Dolor quis, natus doloremque aperiam neque ex cumque?</p>
+						<a href="#" class="kind__link">Читать далее...</a>
+					</div>
+				</article>
+				-->
+
+			</div>
+		</div>
+
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<h5 class="footer__info">email для контакта: kotopedia@cats.com</h5>
+		</div>
+	</footer>
+	<script src="../js/burger.js"></script>
+	<script src="../js/search.js"></script>
+	<script src="../js/kind.js"></script>
+	<script src="../js/db.js"></script>
 </body>
 
 </html>
